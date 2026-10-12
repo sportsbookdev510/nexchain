@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
-$BuyUrl = "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon"
+$BuyUrl = "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x918f03d7727aad7b68f9048dabdd7c1bfbf4a959"
 
 $replacements = @(
     @{ From = 'href="https://nexchain.live"'; To = 'href="' + $BuyUrl + '"' },
