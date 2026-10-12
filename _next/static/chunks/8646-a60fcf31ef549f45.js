@@ -473,7 +473,7 @@
                                 className: "footer_soc",
                                 children: [
                                   (0, s.jsx)(n.default, {
-                                    href: "https://x.com/nexchain_ai",
+                                    href: "https://x.com/nexchainaitech",
                                     children: (0, s.jsx)(r.default, {
                                       src: "/images/footer_x.svg",
                                       alt: "Twitter/X",
