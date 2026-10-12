@@ -1,0 +1,168 @@
+#revenue {
+  padding: 0 16px 112px;
+  background-color: #fff;
+  color: #fff;
+  letter-spacing: -0.045em;
+}
+#revenue .container {
+  width: min(1240px, 100%);
+  padding: 0;
+}
+#revenue .bonus-panel {
+  min-height: 490px;
+  padding: 44px 94px 36px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.12)),
+    url(/images/landing-redesign/bonus-window-bg.png) 50% / cover no-repeat;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  justify-items: center;
+  position: relative;
+}
+#revenue h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 68px;
+  line-height: 1.05;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.045em;
+}
+#revenue h2 span {
+  color: #49ff86;
+}
+#revenue .bonus-subtitle {
+  max-width: 560px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.045em;
+}
+#revenue .bonus-actions {
+  margin-top: 30px;
+}
+#revenue .bonus-actions .btn {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+#revenue .bonus-audits {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+}
+#revenue .bonus-audits a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+#revenue .bonus-audits .bonus-audit-icon {
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+#revenue .bonus-audits .bonus-audit-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) contrast(100%);
+}
+#revenue .bonus-audits .bonus-audit-copy {
+  display: flex;
+  flex-direction: column;
+  color: #a0a0a0;
+  font-size: 11.5px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+#revenue .bonus-audits strong {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+#revenue .bonus-audit-note {
+  max-width: 520px;
+  margin: 16px auto 0;
+  color: #a0a0a0;
+  font-size: 11px;
+  line-height: 1.35;
+  text-align: center;
+}
+@media screen and (max-width: 860px) {
+  #revenue {
+    padding: 0 4px 56px;
+  }
+  #revenue .bonus-panel {
+    min-height: 620px;
+    padding: 56px 12px 28px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.04),
+        rgba(0, 0, 0, 0.12)
+      ),
+      url(/images/landing-redesign/bonus-window-bg.png) 52% bottom/760px auto
+        no-repeat,
+      #030806;
+  }
+  #revenue h2 {
+    max-width: 320px;
+    margin-bottom: 12px;
+    font-size: 31px;
+    line-height: 1.08;
+  }
+  #revenue h2 span {
+    display: block;
+  }
+  #revenue .bonus-subtitle {
+    max-width: 290px;
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+  #revenue .bonus-actions {
+    margin-top: 36px;
+  }
+  #revenue .bonus-actions .btn {
+    padding: 9px 9px 9px 16px;
+    font-size: 14px;
+  }
+  #revenue .bonus-actions .btn:after {
+    width: 32px;
+    height: 32px;
+    background-size: 12px;
+  }
+  #revenue .bonus-audits {
+    margin-top: 36px;
+    gap: 24px;
+  }
+  #revenue .bonus-audits a {
+    gap: 8px;
+  }
+  #revenue .bonus-audits .bonus-audit-icon {
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+  }
+  #revenue .bonus-audits .bonus-audit-copy,
+  #revenue .bonus-audits strong {
+    font-size: 12px;
+  }
+}

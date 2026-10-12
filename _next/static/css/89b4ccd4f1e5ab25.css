@@ -1,0 +1,29 @@
+#pagination {
+  width: 100%;
+  flex-direction: row;
+  gap: 4px;
+}
+#pagination,
+#pagination button {
+  display: flex;
+  justify-content: center;
+}
+#pagination button {
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  border: 1px solid #59615b;
+  color: #07130c;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+}
+#pagination button.active {
+  border-color: #183c24;
+  color: #fff;
+  background-color: #183c24;
+}

@@ -1,0 +1,121 @@
+.blogpost-card {
+  padding: 18px;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8e8;
+  gap: 18px;
+  min-height: 492px;
+}
+.blogpost-card > .title-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 190px;
+}
+.blogpost-card > .title-image-wrap img {
+  border-radius: 14px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+  object-fit: cover;
+}
+.blogpost-card .info {
+  justify-content: space-between;
+  color: #4d544f;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+.blogpost-card .info,
+.blogpost-card .info .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.blogpost-card .info .right img {
+  margin-right: 2px;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.blogpost-card h3 {
+  color: #07130c;
+  font-size: 20px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  margin: unset;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blogpost-card p {
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  display: block;
+  margin: 0;
+}
+.blogpost-card .card-button-block {
+  margin-top: auto;
+}
+.blogpost-card .card-button-block .btn {
+  padding: 8px 8px 8px 18px;
+  border-color: #07130c;
+  color: #07130c;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+.blogpost-card .card-button-block .btn:after {
+  width: 32px;
+  height: 32px;
+  background-size: 12px;
+}
+@media screen and (max-width: 860px) {
+  .blogpost-card {
+    padding: 24px;
+    gap: 12px;
+  }
+  .blogpost-card .info {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+  .blogpost-card .info,
+  .blogpost-card h3 {
+    line-height: 140%;
+    letter-spacing: -0.045em;
+    font-weight: 500;
+  }
+  .blogpost-card h3 {
+    font-size: 18px;
+    margin: unset;
+  }
+  .blogpost-card label {
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.045em;
+    font-weight: 400;
+  }
+  .blogpost-card button.btn {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.045em;
+    font-weight: 500;
+    margin-top: 16px;
+  }
+  .blogpost-card a {
+    height: unset;
+  }
+}

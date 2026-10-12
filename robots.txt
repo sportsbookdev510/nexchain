@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /purchase/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /*?
+Allow: /
+
+Sitemap: https://nexchain.ai/sitemap.xml

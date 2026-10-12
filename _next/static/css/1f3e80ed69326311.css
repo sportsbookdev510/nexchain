@@ -1,0 +1,954 @@
+.builders-hero-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.builders-hero-cta > span {
+  max-width: 620px;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+}
+.builders-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+.builders-anchor {
+  text-decoration: none;
+}
+#buildersPage {
+  background: #fff;
+  color: #07130c;
+  letter-spacing: 0;
+}
+#buildersPage .builders-container {
+  width: min(1240px, 100%);
+  margin: auto;
+}
+#buildersPage .builders-container--wide {
+  width: min(1380px, 100%);
+}
+#buildersPage .builders-container--faq {
+  width: min(920px, 100%);
+}
+#buildersPage .builders-section {
+  padding: 0 16px 104px;
+}
+#buildersPage .builders-section--first {
+  padding-top: 104px;
+}
+#buildersPage .builders-section-head {
+  max-width: 730px;
+  margin-bottom: 54px;
+}
+#buildersPage .builders-section-head h2 {
+  max-width: 720px;
+  margin-bottom: 28px;
+  color: #07130c;
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-section-head h2 span {
+  display: block;
+  color: #a0a0a0;
+}
+#buildersPage .builders-section-head p {
+  max-width: 500px;
+  color: #07130c;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-section-head--center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#buildersPage .builders-section-head--center p {
+  margin: auto;
+}
+#buildersPage .builders-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+#buildersPage .builders-card {
+  min-height: 382px;
+  padding: 34px 22px 28px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#buildersPage .builders-card--compact {
+  min-height: 318px;
+}
+#buildersPage .builders-card-image {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 28px;
+  position: relative;
+}
+#buildersPage .builders-card-image img {
+  object-fit: contain;
+}
+#buildersPage .builders-card--compact .builders-card-image {
+  height: 145px;
+  margin-bottom: 24px;
+}
+#buildersPage .builders-card-copy {
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#buildersPage .builders-card-copy h3 {
+  color: #07130c;
+  font-size: 18px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+#buildersPage .builders-card-copy p {
+  color: #989898;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-micro {
+  max-width: 620px;
+  margin-top: 22px;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+#buildersPage .builders-section--steps {
+  overflow: hidden;
+}
+#buildersPage .builders-roadmap-line {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 0 0 44px;
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+#buildersPage .builders-roadmap-line:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 50vw);
+  width: calc(50vw + 50%);
+  height: 2px;
+  transform: translateY(-50%);
+  background: #07130c;
+}
+#buildersPage .builders-roadmap-line button {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid #07130c;
+  border-radius: 50%;
+  background: #fff;
+  cursor: default;
+  position: relative;
+  z-index: 1;
+  transition: background 0.25s;
+}
+#buildersPage .builders-roadmap-line button.in-progress {
+  background: #edfff2;
+}
+#buildersPage .builders-roadmap-line button.in-progress:after {
+  content: "";
+  width: 10px;
+  height: 8px;
+  background: url(/images/roadmap/check.svg) 50% / contain no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#buildersPage .builders-roadmap-line button.active {
+  background: #ddffea;
+}
+#buildersPage .builders-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+#buildersPage .builders-step {
+  min-height: 400px;
+  padding: 32px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #f9faf9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s;
+}
+#buildersPage .builders-step.in-progress {
+  border-color: rgba(0, 194, 60, 0.25);
+  background: #edfff2;
+}
+#buildersPage .builders-step h3 {
+  margin-bottom: 20px;
+  color: #07130c;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+#buildersPage .builders-step ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#buildersPage .builders-step li {
+  color: #59615b;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+#buildersPage .builders-step li:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  background: url(/images/roadmap/CircleDashed.svg) 50% / contain no-repeat;
+}
+#buildersPage .builders-step-top {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+}
+#buildersPage .builders-step-top span {
+  color: #07130c;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-application {
+  padding: 104px 16px;
+  background: linear-gradient(
+        90deg,
+        rgba(232, 232, 232, 0.55) 1px,
+        transparent 0
+      )
+      0 0/20% 100%,
+    linear-gradient(180deg, rgba(232, 232, 232, 0.55) 1px, transparent 0) 0 0/100%
+      50%,
+    radial-gradient(
+      ellipse 35% 88% at 0 35%,
+      rgba(73, 255, 134, 0.16) 0,
+      rgba(128, 255, 234, 0.1) 42%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 34% 88% at 100% 80%,
+      rgba(73, 255, 134, 0.16) 0,
+      rgba(184, 255, 209, 0.12) 44%,
+      transparent 74%
+    ),
+    #fff;
+}
+#buildersPage .builders-form-layout {
+  width: min(1488px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 560px;
+  gap: 80px;
+  align-items: start;
+}
+#buildersPage .builders-form-copy {
+  padding-top: 70px;
+  padding-left: 70px;
+}
+#buildersPage .builders-form-copy > span {
+  display: inline-flex;
+  margin-bottom: 34px;
+  padding: 11px 28px;
+  border-radius: 999px;
+  background: #07130c;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form-copy h2 {
+  max-width: 620px;
+  margin-bottom: 34px;
+  color: #07130c;
+  font-size: 68px;
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form-copy p {
+  max-width: 430px;
+  margin-bottom: 20px;
+  color: #07130c;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form-copy small {
+  display: block;
+  max-width: 430px;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form {
+  width: 560px;
+  padding: 34px 28px 28px;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+#buildersPage .builders-form h3 {
+  margin-bottom: 20px;
+  color: #07130c;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+#buildersPage .builders-form-full {
+  grid-column: 1/-1;
+}
+#buildersPage .builders-form label,
+#buildersPage .builders-form-label {
+  display: block;
+  margin: 0 0 8px;
+  color: #07130c;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form input,
+#buildersPage .builders-form textarea {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  background: #f9faf9;
+  padding: 16px;
+  color: #07130c;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+#buildersPage .builders-form input::placeholder,
+#buildersPage .builders-form textarea::placeholder {
+  color: #a0a0a0;
+}
+#buildersPage .builders-form input:focus,
+#buildersPage .builders-form input:hover,
+#buildersPage .builders-form textarea:focus,
+#buildersPage .builders-form textarea:hover {
+  border-color: #07130c;
+}
+#buildersPage .builders-form textarea {
+  min-height: 142px;
+  resize: vertical;
+}
+#buildersPage .builders-select {
+  position: relative;
+  z-index: 2;
+}
+#buildersPage .builders-select > button {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  background: #f9faf9;
+  padding: 0 44px 0 16px;
+  color: #07130c;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+#buildersPage .builders-select > button:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-right: 1.5px solid #07130c;
+  border-bottom: 1.5px solid #07130c;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-62%) rotate(45deg);
+  transition: transform 0.2s;
+}
+#buildersPage .builders-select.open {
+  z-index: 8;
+}
+#buildersPage .builders-select.open > button {
+  border-color: #07130c;
+  border-radius: 14px 14px 10px 10px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+#buildersPage .builders-select.open > button:after {
+  transform: translateY(-35%) rotate(225deg);
+}
+#buildersPage .builders-select:not(.selected) > button span {
+  color: #a0a0a0;
+}
+#buildersPage .builders-select ul {
+  width: 100%;
+  margin: 6px 0 0;
+  padding: 6px;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(7, 19, 12, 0.12);
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+}
+#buildersPage .builders-select li {
+  margin: 0;
+}
+#buildersPage .builders-select li button {
+  width: 100%;
+  min-height: 42px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+  padding: 0 12px;
+  color: #07130c;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  transition: background 0.16s, color 0.16s;
+}
+#buildersPage .builders-select li button.active,
+#buildersPage .builders-select li button:focus,
+#buildersPage .builders-select li button:hover {
+  background: #edfff2;
+  color: #07130c;
+  outline: none;
+}
+#buildersPage .builders-select li button.active {
+  font-weight: 500;
+}
+#buildersPage .builders-capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+#buildersPage .builders-capabilities label,
+#buildersPage .builders-consent {
+  min-height: 54px;
+  margin: 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  background: #f9faf9;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+#buildersPage .builders-form .builders-consent {
+  min-height: 0;
+  margin: 6px 0 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+#buildersPage .builders-capabilities input,
+#buildersPage .builders-consent input {
+  appearance: none;
+  width: 17px;
+  min-width: 17px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #989898;
+  border-radius: 3px;
+  background: #fff;
+  display: grid;
+  place-content: center;
+}
+#buildersPage .builders-capabilities input:checked,
+#buildersPage .builders-consent input:checked {
+  border-color: #07130c;
+  background: #07130c;
+}
+#buildersPage .builders-capabilities input:checked:before,
+#buildersPage .builders-consent input:checked:before {
+  content: "";
+  width: 9px;
+  height: 7px;
+  background: url(/images/roadmap/check.svg) 50% / contain no-repeat;
+  filter: invert(1);
+}
+#buildersPage .builders-capabilities span,
+#buildersPage .builders-consent span {
+  color: #59615b;
+  font-size: 12px;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+#buildersPage .builders-form .builders-consent input {
+  margin-top: 0;
+}
+#buildersPage .builders-form-error {
+  color: #c0372d;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+#buildersPage .builders-submit {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 14px;
+  background: #07130c;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0;
+  transition: background 0.2s;
+}
+#buildersPage .builders-submit:focus,
+#buildersPage .builders-submit:hover {
+  background: #474c49;
+}
+#buildersPage .builders-form-note {
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0;
+}
+#buildersPage .builders-success {
+  border: 1px solid rgba(0, 194, 60, 0.24);
+  border-radius: 14px;
+  background: #edfff2;
+  padding: 14px 16px;
+  color: #07130c;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0;
+}
+#buildersPage .builders-section--faq {
+  padding-top: 104px;
+}
+#buildersPage .builders-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+#buildersPage .builders-faq-block {
+  padding: 0;
+}
+#buildersPage .builders-faq-block.active .builders-faq-title h3 {
+  color: #07130c;
+}
+#buildersPage .builders-faq-title {
+  min-height: 56px;
+  display: grid;
+  grid-template-columns: 1fr 26px;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+#buildersPage .builders-faq-title h3 {
+  color: #07130c;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-faq-title .btn-faq {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  justify-self: end;
+  border: 1px solid #07130c;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+}
+#buildersPage .builders-faq-title .btn-faq:after {
+  content: "";
+  width: 13px;
+  height: 10px;
+  display: block;
+  border-radius: 0;
+  background: url(/images/right-arrow.svg) 50% / contain no-repeat;
+  filter: invert(1);
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+#buildersPage .builders-faq-title .btn-faq.active {
+  background: #07130c;
+}
+#buildersPage .builders-faq-title .btn-faq.active:after {
+  width: 12px;
+  height: 13px;
+  background-image: url(/images/b-arrow.svg);
+  filter: invert(1);
+}
+#buildersPage .builders-faq-text {
+  display: none;
+  padding: 0 56px 22px 0;
+  color: #989898;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-faq-text.active {
+  display: block;
+}
+#buildersPage .builders-final {
+  padding: 0 16px 84px;
+}
+#buildersPage .builders-final-panel {
+  min-height: 360px;
+  padding: 48px;
+  border-radius: 8px;
+  background: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 0),
+    radial-gradient(
+      circle at 12% 80%,
+      rgba(73, 255, 134, 0.24),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(128, 255, 234, 0.16),
+      transparent 26%
+    ),
+    #07130c;
+  background-size: 170px 170px, 170px 170px, auto, auto, auto;
+  color: #fff;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 44px;
+  overflow: hidden;
+}
+#buildersPage .builders-final-panel > div:first-child > span {
+  display: inline-flex;
+  margin-bottom: 24px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #49ff86, #b8ffc9);
+  color: #07130c;
+  font-size: 16px;
+  line-height: 1.03;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+#buildersPage .builders-final-panel h2 {
+  max-width: 760px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 68px;
+  line-height: 1.03;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+#buildersPage .builders-final-panel p {
+  max-width: 440px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 1040px) {
+  #buildersPage .builders-card-grid,
+  #buildersPage .builders-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #buildersPage .builders-form-layout {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  #buildersPage .builders-form-copy {
+    padding: 0;
+  }
+  #buildersPage .builders-form {
+    width: 100%;
+  }
+  #buildersPage .builders-final-panel {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #buildersPage .builders-final-panel p {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 860px) {
+  #buildersPage .builders-section,
+  #buildersPage .builders-section--faq {
+    padding: 0 16px 44px;
+  }
+  #buildersPage .builders-section--first {
+    padding-top: 44px;
+  }
+  #buildersPage .builders-section-head {
+    max-width: 100%;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  #buildersPage .builders-section-head h2 {
+    max-width: 320px;
+    margin: 0 auto 16px;
+    font-size: 34px;
+    line-height: 1.08;
+  }
+  #buildersPage .builders-section-head p {
+    max-width: 300px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #buildersPage .builders-card-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  #buildersPage .builders-card,
+  #buildersPage .builders-card--compact {
+    min-height: 0;
+    padding: 20px 20px 24px;
+    border-radius: 16px;
+    background: #fcfcfc;
+    justify-content: flex-start;
+  }
+  #buildersPage .builders-card--compact .builders-card-image,
+  #buildersPage .builders-card-image {
+    height: 220px;
+    margin-bottom: 16px;
+  }
+  #buildersPage .builders-card-copy {
+    min-height: 0;
+    gap: 10px;
+  }
+  #buildersPage .builders-card-copy h3 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  #buildersPage .builders-card-copy p {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  #buildersPage .builders-micro {
+    margin: 18px auto 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  #buildersPage .builders-steps {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  #buildersPage .builders-roadmap-line {
+    justify-content: center;
+    gap: 24px;
+    margin: 0 0 40px;
+  }
+  #buildersPage .builders-roadmap-line:before {
+    left: 0;
+    width: 100%;
+  }
+  #buildersPage .builders-roadmap-line button {
+    flex-basis: 34px;
+    width: 34px;
+    height: 34px;
+  }
+  #buildersPage .builders-step {
+    min-height: 254px;
+    padding: 24px;
+    border-radius: 8px;
+  }
+  #buildersPage .builders-step h3 {
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  #buildersPage .builders-step li {
+    font-size: 12px;
+    line-height: 1.35;
+    grid-template-columns: 14px 1fr;
+    gap: 8px;
+  }
+  #buildersPage .builders-step li:before {
+    width: 14px;
+    height: 14px;
+  }
+  #buildersPage .builders-step-top {
+    margin-bottom: 20px;
+  }
+  #buildersPage .builders-step-top span {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  #buildersPage .builders-application {
+    padding: 52px 16px 64px;
+  }
+  #buildersPage .builders-form-copy {
+    text-align: left;
+  }
+  #buildersPage .builders-form-copy > span {
+    margin-bottom: 22px;
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+  #buildersPage .builders-form-copy h2 {
+    max-width: 360px;
+    margin-bottom: 26px;
+    font-size: 44px;
+    line-height: 1.06;
+  }
+  #buildersPage .builders-form-copy p,
+  #buildersPage .builders-form-copy small {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  #buildersPage .builders-form {
+    padding: 24px;
+  }
+  #buildersPage .builders-capabilities,
+  #buildersPage .builders-form-fields {
+    grid-template-columns: 1fr;
+  }
+  #buildersPage .builders-form input,
+  #buildersPage .builders-form textarea,
+  #buildersPage .builders-select li button,
+  #buildersPage .builders-select > button {
+    font-size: 16px;
+  }
+  #buildersPage .builders-faq-title {
+    min-height: 50px;
+    grid-template-columns: 1fr 22px;
+    gap: 12px;
+  }
+  #buildersPage .builders-faq-title h3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  #buildersPage .builders-faq-title .btn-faq {
+    width: 22px;
+    height: 22px;
+  }
+  #buildersPage .builders-faq-title .btn-faq:after {
+    width: 11px;
+    height: 8px;
+  }
+  #buildersPage .builders-faq-text {
+    padding: 0 34px 14px 0;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #buildersPage .builders-final {
+    padding: 0 16px 70px;
+  }
+  #buildersPage .builders-final-panel {
+    min-height: 430px;
+    padding: 34px 18px;
+    border-radius: 20px;
+    gap: 30px;
+  }
+  #buildersPage .builders-final-panel > div:first-child > span {
+    margin-bottom: 18px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  #buildersPage .builders-final-panel h2 {
+    max-width: 330px;
+    margin: 0 auto 20px;
+    font-size: 42px;
+    line-height: 1.08;
+  }
+  #buildersPage .builders-final-panel p {
+    max-width: 270px;
+    font-size: 12px;
+  }
+  .builders-hero-cta {
+    gap: 14px;
+  }
+  .builders-hero-cta > span {
+    max-width: 280px;
+    font-size: 12px;
+  }
+  .builders-actions {
+    gap: 8px;
+  }
+  .builders-actions .btn {
+    padding: 9px 8px 9px 14px;
+    font-size: 14px;
+  }
+  .builders-actions .btn:after {
+    width: 28px;
+    height: 28px;
+    background-size: 10px;
+  }
+}

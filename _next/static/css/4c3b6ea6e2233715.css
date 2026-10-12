@@ -1,0 +1,204 @@
+#tokenomics {
+  padding: 0 16px 108px;
+  background: #fff;
+  color: #07130c;
+}
+#tokenomics .container {
+  width: min(1384px, 100%);
+  padding: 0;
+}
+#tokenomics .tokenomics-card {
+  padding: 58px 72px 46px;
+  border-radius: 8px;
+  background: #f9faf9;
+}
+#tokenomics .tokenomics-card--compact {
+  padding-top: 86px;
+}
+#tokenomics .tokenomics-head {
+  max-width: 620px;
+  margin-bottom: 46px;
+}
+#tokenomics .tokenomics-head h2 {
+  margin-bottom: 14px;
+  font-size: 52px;
+  line-height: 1.05;
+  font-weight: 500;
+}
+#tokenomics .tokenomics-head p {
+  color: #59615b;
+  font-size: 16px;
+  line-height: 1.4;
+}
+#tokenomics .tokenomics-main {
+  display: grid;
+  grid-template-columns: minmax(300px, 400px) minmax(0, 1fr);
+  align-items: center;
+  gap: 52px;
+}
+#tokenomics .tokenomics-chart {
+  width: min(100%, 400px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(
+    #49ff86 0deg 108deg,
+    #f9faf9 108deg 108.6deg,
+    #00170b 108.6deg 162.6deg,
+    #f9faf9 162.6deg 163.2deg,
+    #94ff2f 163.2deg 217.2deg,
+    #f9faf9 217.2deg 217.8deg,
+    #07883f 217.8deg 253.8deg,
+    #f9faf9 253.8deg 254.4deg,
+    #dbe027 254.4deg 290.4deg,
+    #f9faf9 290.4deg 291deg,
+    #54c5ee 291deg 319.8deg,
+    #f9faf9 319.8deg 320.4deg,
+    #4ce8d4 320.4deg 345.6deg,
+    #f9faf9 345.6deg 346.2deg,
+    #3dd29d 346.2deg 1turn
+  );
+  position: relative;
+}
+#tokenomics .tokenomics-chart:before {
+  content: "";
+  width: 54%;
+  height: 54%;
+  border-radius: 50%;
+  background: #f9faf9;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+#tokenomics .tokenomics-chart-center {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  color: #07130c;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+}
+#tokenomics .tokenomics-table-side {
+  min-width: 0;
+  padding: 24px;
+  border-radius: 22px;
+  background: #fff;
+}
+#tokenomics .tokenomics-table-wrap {
+  overflow-x: auto;
+}
+#tokenomics .tokenomics-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+#tokenomics .tokenomics-table td,
+#tokenomics .tokenomics-table th {
+  padding: 11px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+#tokenomics .tokenomics-table th {
+  color: #59615b;
+  font-size: 13px;
+  font-weight: 500;
+}
+#tokenomics .tokenomics-table td {
+  background: #f9faf9;
+  color: #07130c;
+  font-weight: 400;
+}
+#tokenomics .tokenomics-table td:first-child,
+#tokenomics .tokenomics-table th:first-child {
+  border-radius: 4px 0 0 4px;
+}
+#tokenomics .tokenomics-table td:last-child,
+#tokenomics .tokenomics-table th:last-child {
+  border-radius: 0 4px 4px 0;
+}
+#tokenomics .tokenomics-allocation {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+#tokenomics .tokenomics-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+#tokenomics .tokenomics-total {
+  margin: 28px 0 0;
+  color: #4d544f;
+  font-size: 16px;
+  line-height: 1.4;
+}
+#tokenomics .tokenomics-total strong {
+  color: #07130c;
+}
+@media screen and (max-width: 1040px) {
+  #tokenomics .tokenomics-card {
+    padding: 48px 34px 40px;
+  }
+  #tokenomics .tokenomics-main {
+    grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+    gap: 28px;
+  }
+  #tokenomics .tokenomics-table-side {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 860px) {
+  #tokenomics {
+    padding: 0 10px 44px;
+  }
+  #tokenomics .tokenomics-card {
+    padding: 36px 10px;
+    border-radius: 0;
+    background: #fff;
+  }
+  #tokenomics .tokenomics-card--compact {
+    padding-top: 0;
+  }
+  #tokenomics .tokenomics-head {
+    max-width: 320px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  #tokenomics .tokenomics-head h2 {
+    font-size: 34px;
+  }
+  #tokenomics .tokenomics-head p {
+    font-size: 14px;
+  }
+  #tokenomics .tokenomics-main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  #tokenomics .tokenomics-chart {
+    width: min(100%, 234px);
+    margin: auto;
+  }
+  #tokenomics .tokenomics-chart-center {
+    font-size: 26px;
+  }
+  #tokenomics .tokenomics-table-side {
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+  }
+  #tokenomics .tokenomics-table {
+    min-width: 680px;
+    font-size: 14px;
+  }
+  #tokenomics .tokenomics-table td,
+  #tokenomics .tokenomics-table th {
+    padding: 12px 10px;
+  }
+  #tokenomics .tokenomics-total {
+    font-size: 14px;
+  }
+}

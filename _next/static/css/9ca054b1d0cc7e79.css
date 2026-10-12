@@ -1,0 +1,289 @@
+#community {
+  padding: 0 16px 104px;
+  background: #fff;
+  color: #fff;
+  letter-spacing: -0.045em;
+}
+#community .container {
+  width: min(1240px, 100%);
+  padding: 0;
+}
+#community .community-panel {
+  height: 600px;
+  padding: 52px 32px 58px;
+  border-radius: 16px;
+  background: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 0),
+    radial-gradient(circle at 8% 73%, rgba(73, 255, 134, 0.27), transparent 24%),
+    radial-gradient(
+      circle at 92% 78%,
+      rgba(73, 255, 134, 0.22),
+      transparent 22%
+    ),
+    radial-gradient(
+      circle at 78% 15%,
+      rgba(87, 255, 174, 0.15),
+      transparent 34%
+    ),
+    #00110a;
+  background-size: 170px 170px, 170px 170px, auto, auto, auto, auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+#community .community-badge {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #49ff86, #b8ffc9);
+  color: #07130c;
+  font-size: 16px;
+  font-weight: 500;
+}
+#community .community-badge,
+#community h2 {
+  margin-bottom: 24px;
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+#community h2 {
+  font-size: 70px;
+  font-weight: 800;
+}
+#community h2,
+#community p {
+  color: #fff;
+  text-align: center;
+}
+#community p {
+  width: min(450px, 100%);
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+#community .community-avatars {
+  width: 344px;
+  height: 56px;
+  position: relative;
+}
+#community .community-avatars img {
+  object-fit: contain;
+}
+#community .community-note {
+  margin-top: 12px;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.045em;
+}
+#community .community-stats {
+  margin-top: 28px;
+  display: flex;
+  gap: 22px;
+}
+#community .community-stat {
+  min-width: 116px;
+  padding: 16px 20px;
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  border-radius: 8px;
+  background: rgba(18, 18, 18, 0.92);
+  text-align: left;
+}
+#community .community-stat span {
+  margin-bottom: 7px;
+  color: #989898;
+  font-size: 16px;
+}
+#community .community-stat span,
+#community .community-stat strong {
+  display: block;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+#community .community-stat strong {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 860px) {
+  #community {
+    padding: 0 16px 44px;
+  }
+  #community .community-panel {
+    height: 476px;
+    padding: 28px 18px 22px;
+    background-size: 98px 98px, 98px 98px, auto, auto, auto, auto;
+  }
+  #community .community-badge {
+    margin-bottom: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  #community h2 {
+    margin-bottom: 24px;
+    font-size: 70px;
+    line-height: 1.03;
+  }
+  #community p {
+    width: min(235px, 100%);
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #community .community-avatars {
+    width: 210px;
+    height: 40px;
+  }
+  #community .community-note {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #community .community-stats {
+    width: 100%;
+    margin-top: auto;
+    gap: 8px;
+    justify-content: center;
+  }
+  #community .community-stat {
+    min-width: 0;
+    width: 31%;
+    padding: 12px 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #community .community-stat span {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  #community .community-stat strong {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+#final-cta {
+  padding: 0 16px 84px;
+  background: #fff;
+  color: #fff;
+  letter-spacing: -0.045em;
+}
+#final-cta .container {
+  width: min(1240px, 100%);
+  padding: 0;
+}
+#final-cta .final-cta-panel {
+  height: 455px;
+  padding: 54px 48px 42px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.14)),
+    url(/images/landing-redesign/final-cta-bg.png) 50% / cover no-repeat;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 42px;
+  overflow: hidden;
+}
+#final-cta .final-cta-copy h2 {
+  max-width: 660px;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 86px;
+  line-height: 1.03;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+}
+#final-cta .final-cta-copy h2 span {
+  display: block;
+  background: linear-gradient(90deg, #49ff86, #baffd1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+#final-cta .final-cta-copy p {
+  max-width: 400px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+#final-cta .final-cta-copy p span {
+  color: #49ff86;
+}
+#final-cta .final-cta-side {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#final-cta .final-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#final-cta .final-cta-actions .btn {
+  font-size: 14.71px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+#final-cta .final-cta-actions a:first-child .btn {
+  background: #49ff86;
+  border-color: #49ff86;
+  color: #000;
+}
+@media screen and (max-width: 860px) {
+  #final-cta {
+    padding: 0 4px 70px;
+  }
+  #final-cta .final-cta-panel {
+    height: 535px;
+    padding: 48px 16px 24px;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    gap: 42px;
+    text-align: center;
+    background-position: bottom;
+  }
+  #final-cta .final-cta-copy h2 {
+    max-width: 330px;
+    margin: 0 auto 26px;
+    font-size: 42px;
+    line-height: 1.08;
+  }
+  #final-cta .final-cta-copy p {
+    max-width: 280px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  #final-cta .final-cta-side {
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+  }
+  #final-cta .final-cta-actions {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  #final-cta .final-cta-actions .btn {
+    padding: 9px 8px 9px 14px;
+    font-size: 14px;
+  }
+  #final-cta .final-cta-actions .btn:after {
+    width: 28px;
+    height: 28px;
+    background-size: 10px;
+  }
+}

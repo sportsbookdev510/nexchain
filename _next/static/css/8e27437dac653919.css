@@ -1,0 +1,9 @@
+.nex-link {
+  text-decoration: none;
+  display: inline-block;
+}
+.nex-link.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: no-drop;
+}
